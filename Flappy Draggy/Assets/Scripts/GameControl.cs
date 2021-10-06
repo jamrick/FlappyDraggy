@@ -17,6 +17,20 @@ public class GameControl : MonoBehaviour
     //public bool gameOver = false;               //Is the game over?
     public float scrollSpeed = -1.5f;
 
+    void OnEnable()
+    {
+        EventSystem.startGame += EventSystem_StartGame;
+    }
+
+    void OnDisable()
+    {
+        EventSystem.startGame -= EventSystem_StartGame;
+    }
+
+    void EventSystem_StartGame()
+    {
+        EventSystem.SetGameRunning(true);
+    }
 
     void Awake()
     {
