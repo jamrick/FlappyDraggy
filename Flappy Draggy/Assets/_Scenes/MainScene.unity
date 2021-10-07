@@ -154,7 +154,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 1045229965667320504}
   playerStart: {fileID: 1556239232}
-  scrollSpeed: -1.5
+  scrollSpeed: -2
 --- !u!4 &10386001
 Transform:
   m_ObjectHideFlags: 0
