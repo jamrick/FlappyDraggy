@@ -21,4 +21,12 @@ public class CoinController : MonoBehaviour
     {
         
     }
+
+    void OnTriggerExit2d(Collider2D col)
+    {
+        if (col.tag == "OOB")
+        {
+            Destroy(this.gameObject);
+        }
+    }
 }
